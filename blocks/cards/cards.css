@@ -27,7 +27,7 @@
 }
 
 /*custom*/
-.cards-card-image:hover{
+.cards > ul >li:hover{
   transform:scale(1.1);
   transition:transform .2s;
 }
