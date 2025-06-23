@@ -2,6 +2,7 @@ import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 const decorateLinkItems = (footer) => {
+ const footer = document.createElement('div');
   // add wrapper cs class to all ul elements
   footer.querySelectorAll('ul').forEach((ul) => {
   //  createTag('li', { class: 'nav-items-wrapper' });
