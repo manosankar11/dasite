@@ -1,5 +1,4 @@
 import { getMetadata } from '../../scripts/aem.js';
-import { createTag } from '../../scripts/utils.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 const decorateLinkItems = (footer) => {
