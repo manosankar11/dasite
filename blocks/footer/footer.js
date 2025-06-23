@@ -31,10 +31,10 @@ export default async function decorate(block) {
   const footerMeta = getMetadata('footer');
   block.textContent = '';
   // load footer fragment
-  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/aemedge/footer';
+  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/dasite/footer';
   const fragment = await loadFragment(footerPath);
   if (footerMeta) {
-    const footerVariant = footerMeta.split('/').pop(); // Gets 'footer-latino-es' from '/aemedge/footer-latino-es'
+    const footerVariant = footerMeta.split('/').pop(); // Gets 'footer-latino-es' from '/dasite/footer-latino-es'
     if (footerVariant && footerVariant !== 'footer') {
       block.classList.add(footerVariant);
     }
