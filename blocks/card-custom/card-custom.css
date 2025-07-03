@@ -1,0 +1,8 @@
+.card-custom{
+  background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0px 10px;
+    margin: 20px 0px;
+}
