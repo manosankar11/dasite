@@ -1,6 +1,6 @@
 export default function decorate(block) {
 [...block.children].forEach(row) => {
-  [...block.children].forEach(col) => {
+  [...row.children].forEach(col) => {
   console.log(col);
   });
 });
